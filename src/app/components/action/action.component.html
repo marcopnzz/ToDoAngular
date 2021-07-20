@@ -1,0 +1,20 @@
+<div class="action">
+  <div class="action-description" (click)="setDone()">
+    <div *ngIf="!act.isState()">
+      {{ act.getText() }}
+    </div>
+    <div *ngIf="act.isState()">
+      <del>
+        <p>{{ act.getText() }}</p>
+      </del>
+    </div>
+  </div>
+  <div class="action-remove">
+    <img
+      src="{{ url }}"
+      (mouseenter)="openTrash()"
+      (mouseleave)="closeTrash()"
+      (click)="remove(index)"
+    />
+  </div>
+</div>

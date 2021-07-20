@@ -1,0 +1,22 @@
+.insert {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  border: none;
+  background-color: rgb(202, 202, 202);
+  padding: 10px;
+  border-radius: 2px;
+}
+input:focus {
+  outline: none;
+}
+button {
+  border: none;
+  padding: 10px;
+}

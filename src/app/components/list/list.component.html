@@ -1,0 +1,9 @@
+<div class="list">
+  <div *ngFor="let act of list; let i = index">
+    <app-action
+      [act]="act"
+      [index]="i"
+      (indexToRemove)="removeRow($event)"
+    ></app-action>
+  </div>
+</div>

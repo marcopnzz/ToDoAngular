@@ -1,0 +1,32 @@
+.action {
+  padding: 10px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 2px;
+  display: flex;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-description,
+img:hover {
+  cursor: pointer;
+}
+img {
+  height: 30px;
+}
+.action-remove {
+  flex: 0.1;
+}
+.action-description {
+  flex: 0.8;
+  width: 80%;
+  text-overflow: clip;
+}
+
+@media only screen and (max-width: 600px) {
+  .action {
+    width: 80vw;
+  }
+}
